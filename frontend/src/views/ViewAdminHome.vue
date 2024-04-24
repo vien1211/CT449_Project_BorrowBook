@@ -3,7 +3,7 @@
     <SidebarNav></SidebarNav>
     <div class="main">
       <InfoUserAdmin></InfoUserAdmin>
-      <div class="dashboard-main__table">
+      <div class="dashboard-main__table" style="font-family: poppins, sans-serif;">
         <div
           style="
             display: flex;
@@ -13,6 +13,7 @@
         >
           <h3>Thông tin sách</h3>
           <button class="btn btn-primary" @click="navigateToCreateBook">
+            <i class="fa-solid fa-plus"></i>
             Thêm mới
           </button>
         </div>
@@ -38,11 +39,12 @@
                 <div style="display: flex; gap: 10px">
                   <button
                     class="btn btn-primary"
+                    style="width: 130px; background-color: transparent; border: 1px solid rgb(205, 184, 66);color: black;"
                     @click="navigateToUpdateBook(item._id)"
-                  >
-                    Sửa
+                  ><i class="fas fa-edit"></i>
+                    Chỉnh Sửa
                   </button>
-                  <button class="btn btn-danger" @click="deleteBook(item._id)">
+                  <button class="btn btn-danger" @click="deleteBook(item._id)"><i class="fa-solid fa-trash"></i>
                     Xóa
                   </button>
                 </div>

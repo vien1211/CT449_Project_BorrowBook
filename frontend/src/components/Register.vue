@@ -1,8 +1,8 @@
 <template>
-  <div id="register" class="w-50 mt-30">
-    <h2 class="tieude text-primary mt-5">Đăng ký</h2>
-    <Form @submit="submitRegister" :validation-schema="registerFormSchema">
-      <div class="form-group">
+  <div id="register"  class="w-25" style="box-shadow: 1px 1px 5px 1px rgb(222, 222, 222); height: 450px; ">
+    <h2 class=" mt-5" style="text-align: center; color: rgb(205, 184, 66)">Đăng ký</h2>
+    <Form @submit="submitRegister" :validation-schema="registerFormSchema" style="margin-left: 13px">
+      <div class="form-group" style="width: 95%;">
         <label for="username">Tên tài khoản</label>
         <Field
           name="username"
@@ -12,7 +12,7 @@
         />
         <ErrorMessage name="username" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="email">E-mail</label>
         <Field
           name="email"
@@ -23,7 +23,7 @@
         <ErrorMessage name="email" class="error-feedback" />
       </div>
 
-      <div class="form-group">
+      <div class="form-group"  style="width: 95%;margin-top: 10px">
         <label for="password">Mật khẩu</label>
         <Field
           name="password"
@@ -33,7 +33,7 @@
         />
         <ErrorMessage name="password" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group"  style="width: 95%;margin-top: 10px">
         <label for="confirm_password">Xác nhận mật khẩu</label>
         <Field
           name="confirm_password"
@@ -45,8 +45,8 @@
       </div>
 
       <div class="form-group mt-4" id="btn_login">
-        <button class="btn btn-primary" type="submit">Đăng ký</button>
-        <button class="btn btn-outline-primary" @click="backLogin">
+        <button class="btn" type="submit" style="background-color: rgb(205, 184, 66); color: white;">Đăng ký</button>
+        <button class="btn" @click="backLogin" >
           Đăng nhập
         </button>
       </div>
@@ -56,7 +56,9 @@
 <style>
 #register {
   margin: auto;
+  font-family: poppins, sans-serif;
 }
+
 
 #btn_login {
   text-align: center;

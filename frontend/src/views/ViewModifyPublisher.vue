@@ -1,8 +1,8 @@
 <template>
-  <div class="dashboard">
+  <div class="dashboard" style="font-family: poppins, sans-serif">
     <SidebarNav></SidebarNav>
-    <div class="main">
-      <h3>Thêm mới</h3>
+    <div class="main" >
+      <h3 >Thêm mới</h3>
       <PublisherForm></PublisherForm>
     </div>
   </div>

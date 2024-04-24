@@ -3,7 +3,7 @@
     <SidebarNav></SidebarNav>
     <div class="main">
       <InfoUserAdmin></InfoUserAdmin>
-      <div class="dashboard-main__table">
+      <div class="dashboard-main__table" style="font-family: poppins, sans-serif;">
         <div
           style="
             display: flex;
@@ -13,10 +13,11 @@
         >
           <h3>Thông tin nhà xuất bản</h3>
           <button class="btn btn-primary" @click="navigateToCreatePublisher">
+            <i class="fa-solid fa-plus"></i>
             Thêm mới
           </button>
         </div>
-        <table class="table table-hover">
+        <table class="table table-hover" style="font-family: poppins, sans-serif;">
           <thead>
             <tr>
               <th scope="col">ID</th>
@@ -35,14 +36,16 @@
                 <div style="display: flex; gap: 10px">
                   <button
                     class="btn btn-primary"
+                    style="width: 130px; background-color: transparent; border: 1px solid rgb(205, 184, 66);color: black;"
+                    
                     @click="navigateToUpdatePublisher(item._id)"
-                  >
-                    Sửa
+                  ><i class="fas fa-edit"></i>
+                    Chỉnh Sửa
                   </button>
                   <button
                     class="btn btn-danger"
                     @click="deletePublisher(item._id)"
-                  >
+                  ><i class="fa-solid fa-trash"></i>
                     Xóa
                   </button>
                 </div>

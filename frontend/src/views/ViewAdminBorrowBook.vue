@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard">
+  <div class="dashboard" style="font-family: poppins, sans-serif">
     <SidebarNav></SidebarNav>
     <div class="main">
       <InfoUserAdmin></InfoUserAdmin>
@@ -12,7 +12,7 @@
           "
         >
           <h3>Thông tin mượn sách</h3>
-          <button class="btn btn-primary">Thêm mới</button>
+          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>Thêm mới</button>
         </div>
         <table class="table table-hover">
           <thead>
@@ -38,8 +38,20 @@
               </td>
               <td>
                 <div style="display: flex; gap: 10px">
-                  <button class="btn btn-primary">Sửa</button>
-                  <button class="btn btn-danger">Xóa</button>
+                  <button
+                    class="btn btn-primary"
+                    style="width: 130px; background-color: transparent; border: 1px solid rgb(205, 184, 66);color: black;"
+                    
+                    @click="navigateToUpdatePublisher(item._id)"
+                  ><i class="fas fa-edit"></i>
+                    Chỉnh Sửa
+                  </button>
+                  <button
+                    class="btn btn-danger"
+                    @click="deletePublisher(item._id)"
+                  ><i class="fa-solid fa-trash"></i>
+                    Xóa
+                  </button>
                 </div>
               </td>
             </tr>

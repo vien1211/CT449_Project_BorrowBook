@@ -1,9 +1,10 @@
 <template>
   <aside class="sidebar">
-    <div class="h-100">
-      <div id="logo">Book Store</div>
-      <ul class="sidebar-nav">
-        <li class="sidebar-header">Admin</li>
+    <div class="h-100" style="font-family: poppins, sans-serif;background-color: rgb(205, 184, 66);">
+      <div id="logo" style="text-align: center; font-size: 2rem; color: white;">Vien Store</div>
+      <hr />
+      <ul class="sidebar-nav" style="color: white;">
+        <li class="sidebar-header" style="font-size: 1.5rem;">Admin</li>
         <li class="sidebar-item" @click="navigateToManageBook">Quản lý sách</li>
         <li class="sidebar-item" @click="navigateToManagePublisher">
           Nhà xuất bản
@@ -56,11 +57,10 @@ ul > li {
 .sidebar-item {
   padding: 16px 30px;
   cursor: pointer;
-  border-radius: 10px;
   transition: all 0.1s linear;
 }
 .sidebar-item:hover {
-  background-color: blue;
+  background-color: rgb(205, 184, 66);
   color: white;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard">
+  <div class="dashboard" style="font-family: poppins, sans-serif;">
     <SidebarNav></SidebarNav>
     <div class="main">
       <h3>Chỉnh sửa</h3>

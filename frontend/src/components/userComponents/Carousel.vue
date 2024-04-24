@@ -1,17 +1,17 @@
 <template>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="height: 330px;">
       <div class="carousel-item active">
         <img
           class="d-block w-100"
-          src="https://picsum.photos/seed/picsum/200/300"
+          src="https://bookbrush.com/wp-content/uploads/Dean-Koontz-Banner.png"
           alt="First slide"
         />
       </div>
       <div class="carousel-item">
         <img
           class="d-block w-100"
-          src="https://picsum.photos/seed/picsum/200/301"
+          src="https://bookbrush.com/wp-content/uploads/Dean-Koontz-Banner.png"
           alt="Second slide"
         />
       </div>

@@ -1,14 +1,15 @@
 <template>
-  <div>
+  <div style="font-family: poppins, sans-serif;">
     <Nav></Nav>
-    <div id="book-detail">
+    <div id="book-detail" style="box-shadow: 1px 1px 5px 5px rgb(222, 222, 222)">
       <div class="book-detail__img">
         <img :src="book.image" alt="book" />
       </div>
-      <div>
+      <div class="vertical-divider"></div>
+      <div style="padding: 12px">
         <div class="book-detail__info">
           <h4 class="book-detail__title">{{ book.name }}</h4>
-          <p class="book-detail__author">Tác giả: {{ book.author }}</p>
+          <p class="book-detail__author">Tác giả: {{ book.author }}</p> <hr/>
           <p class="book-detail__price">Giá: {{ book.price }}</p>
           <p class="book-detail__quantity">Số lượng: {{ book.quantity }}</p>
         </div>
@@ -43,9 +44,10 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
-          <button type="submit" class="btn btn-primary mt-3">Mượn</button>
+          <button type="submit" class="btn mt-3" style="background-color: rgb(205, 184, 66); color: white;">Mượn</button>
         </form>
       </div>
     </div>
@@ -79,15 +81,36 @@
   width: 360px;
   height: 520px;
   object-fit: cover;
+  transition: transform 0.6s ease; 
+}
+
+.book-detail__img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s ease;
 }
 
 .book-detail__title {
   font-size: 40px;
   font-weight: 600;
 }
+
+.book-detail__price {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  color: rgb(219, 103, 49);
+}
+
 .book-detail__author {
   font-size: 20px;
   font-weight: 500;
+}
+
+.vertical-divider {
+  width: 2px; 
+  height: 520px; 
+  background-color: #ccc; 
+  margin-left: 5px;
 }
 </style>
 
@@ -124,7 +147,7 @@ export default {
         const user_id = JSON.parse(localStorage.getItem("user"))?._id;
 
         if (!user_id) {
-          alert("Bạn cần đăng nhập để mượn sách");
+          alert("Hãy đăng nhập để mượn sách");
           return;
         }
 

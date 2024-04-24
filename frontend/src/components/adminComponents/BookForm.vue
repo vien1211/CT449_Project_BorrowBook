@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <Form @submit="handleSubmit" class="main-form">
-      <div class="form-group">
+  <div class="w-50" style="box-shadow: 1px 1px 5px 1px rgb(222, 222, 222); height: 670px; margin: 0 auto">
+    <Form @submit="handleSubmit" class="main-form" style="margin-left: 15px;padding: 10px;" >
+      <div class="form-group" style="width: 95%;">
         <label for="image">Hình ảnh</label>
         <Field
           type="text"
@@ -13,7 +13,7 @@
         />
         <ErrorMessage name="image" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="name">Tên</label>
         <Field
           type="text"
@@ -25,7 +25,7 @@
         />
         <ErrorMessage name="name" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="author">Tác giả</label>
         <Field
           type="text"
@@ -37,7 +37,7 @@
         />
         <ErrorMessage name="author" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="quantity">Số lượng</label>
         <Field
           type="text"
@@ -49,7 +49,7 @@
         />
         <ErrorMessage name="quantity" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="price">Giá</label>
         <Field
           type="text"
@@ -61,7 +61,7 @@
         />
         <ErrorMessage name="price" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="publishYear">Năm xuất bản</label>
         <Field
           type="text"
@@ -73,7 +73,7 @@
         />
         <ErrorMessage name="publishYear" class="error-feedback" />
       </div>
-      <div class="form-group">
+      <div class="form-group" style="width: 95%;margin-top: 10px">
         <label for="publisher">Nhà xuất bản</label>
         <select
           id="publisher"
@@ -88,7 +88,7 @@
           </option>
         </select>
       </div>
-      <button class="btn btn-primary" type="submit">Lưu</button>
+      <button class="btn btn-primary" type="submit" style="width: 25%; padding: 10px;margin: auto; background-color: rgb(205, 184, 66); border: none">Lưu</button>
     </Form>
   </div>
 </template>
@@ -99,6 +99,7 @@
   flex-direction: column;
   gap: 16px;
 }
+
 </style>
 
 <script>

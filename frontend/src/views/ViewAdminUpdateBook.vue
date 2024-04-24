@@ -1,8 +1,8 @@
 <template>
-  <div class="dashboard">
+  <div class="dashboard" style="font-family: poppins, sans-serif;">
     <SidebarNav></SidebarNav>
-    <div class="main">
-      <h3>Chỉnh sửa</h3>
+    <div class="main" >
+      <h3 style="text-align: center; margin-bottom: 20px">Chỉnh sửa</h3>
       <p v-if="!loading">
         <BookForm :book="book"></BookForm>
       </p>

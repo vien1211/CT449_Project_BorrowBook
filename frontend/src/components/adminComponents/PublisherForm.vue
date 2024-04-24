@@ -1,6 +1,6 @@
 <template>
-  <div v-if="publisher">
-    <Form @submit="handleSubmit" class="main-form">
+  <div v-if="publisher" class="w-50" style="box-shadow: 1px 1px 5px 1px rgb(222, 222, 222); height: 670px; margin: 0 auto">
+    <Form @submit="handleSubmit" class="main-form" style="margin-left: 15px; padding-top: 10px;">
       <div class="form-group">
         <label for="name">Tên</label>
         <Field
@@ -25,7 +25,7 @@
         />
         <ErrorMessage name="address" class="error-feedback" />
       </div>
-      <button class="btn btn-primary" type="submit">Lưu</button>
+      <button class="btn btn-primary" type="submit" style="width: 25%; padding: 10px;margin: auto; background-color: rgb(205, 184, 66); border: none">Lưu</button>
     </Form>
   </div>
 </template>
